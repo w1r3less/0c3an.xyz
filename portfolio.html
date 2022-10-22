@@ -1,0 +1,85 @@
+<html>
+    <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="npm/bootstrap_5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+        <link rel="stylesheet" href="additional.css">
+        <link href="ajax/libs/animate_css/4.1.1/animate.min.css" rel="stylesheet">
+        <script src="9e68e5cd5e.js" ></script>
+        <script src="jquery-3.6.0.js"></script>
+        <script src="ui/1.13.1/jquery-ui.js"></script>
+        <title>0c3an.xyz</title>
+        <link rel="icon" type="image/x-icon" href="img/nerd-face_1f913.png">
+	<link rel="canonical" href="https://0c3an.xyz/portfolio.html" />
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="ICY">
+        <meta name="description" content="Ryan King, 19 | Computer Science Student.">
+    </head>
+    <body>
+      <video src="img/bg02.mp4" id="background" autoplay muted loop></video>
+        <div class="container h-100">
+            <div class="row h-100 justify-content-center align-items-center">
+              <form class="col-9">
+                <div class="card text-center" id="draggable">
+                    <div class="card-header">
+                      <ul class="nav nav-tabs card-header-tabs justify-content-center nav-fill">
+                        <li class="nav-item inactive-tab ca-three-alt">
+                          <a class="nav-link" href="index.html"><img src="img/cvc-favicon.png">&nbsp; icy - home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="true" href="#"><img src="img/doc-favicon.png">&nbsp;icy - portfolio</a>
+                        </li>
+                        <li class="nav-item inactive-tab ca-three-alt">
+                          <a class="nav-link" href="specs.html"><img src="img/pc-favicon.png">&nbsp;&nbsp; icy - extra</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card-body">
+                      <h2 class="card-title linear-wipe">Portfolio</h2>
+                      <p class="card-text calmdownbr">
+                        <a href="http://0c3an.xyz/" target="_blank">0c3an.xyz</a><br />
+                        My personal website.<br />
+                        <br />
+                        <a href="https://github.com/iceyboy" target="_blank">github.com/iceyboy</a><br />
+                        My github profile.<br />
+                        <br />
+                        <a href="https://leetcode.com/RyanKing123/" target="_blank">leetcode.com/RyanKing123</a><br />
+                        My leetcode profile.<br />
+                        <br />
+                        
+                        <a href="https://tryhackme.com/p/ryanking123" target="_blank">tryhackme.com/p/ryanking123</a> <a href="https://deathwishninety.com/" target="_blank">(alt)</a><br />
+                        My tryhackme profile.
+                      </p>
+                      <div class="spacer"></div>
+                    </div>
+                  </div>
+              </form>   
+            </div>
+          </div>
+    </body>
+    <!-- <script>
+      var e = document.getElementById("background");
+e.style.opacity = 0;
+var vid = document.getElementById("background");
+vid.oncanplaythrough = function() {
+  setTimeout(function() {
+      var e = document.getElementById('background');
+      fade(e);
+  }, 10);
+};
+function fade(element) {
+  var op = 0;
+  var timer = setInterval(function() {
+      if (op >= 1) clearInterval(timer);
+      element.style.opacity = op;
+      element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+      op += op * 0.1 || 0.1;
+  }, 50);
+}
+  </script> -->
+    <script>
+  $( function() {
+    $( "#draggable" ).draggable();
+  } );
+  $( "#draggable" ).draggable({ cursor: "move" });
+  </script>

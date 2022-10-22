@@ -1,0 +1,86 @@
+<html>
+    <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link href="npm/bootstrap_5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+        <link rel="stylesheet" href="additional.css">
+        <link href="ajax/libs/animate_css/4.1.1/animate.min.css" rel="stylesheet">
+        <script src="9e68e5cd5e.js" ></script>
+        <script src="jquery-3.6.0.js"></script>
+  		<script src="ui/1.13.1/jquery-ui.js"></script>
+        <title>0c3an.xyz</title>
+        <link rel="icon" type="image/x-icon" href="img/nerd-face_1f913.png">
+	<link rel="canonical" href="0c3an.xyz" />
+        <!-- Primary Meta Tags -->
+		<meta name="title" content="ICY">
+		<meta name="description" content="Ryan King, 19 | Computer Science Student.">
+    </head>
+    <body>
+        <video src="img/bg01.mp4" id="background" autoplay muted loop></video>
+        <div class="container h-100">
+            <div class="row h-100 justify-content-center align-items-center">
+              <form class="col-9">
+                <div class="card text-center card-anim" id="draggable">
+                    <div class="card-header">
+                      <ul class="nav nav-tabs card-header-tabs justify-content-center nav-fill">
+                        <li class="nav-item ca-two">
+                          <a class="nav-link active" aria-current="true" href="#"><img src="img/cvc-favicon.png">&nbsp; icy - home</a>
+                        </li>
+                        <li class="nav-item inactive-tab ca-three">
+                          <a class="nav-link" href="portfolio.html"><img src="img/doc-favicon.png">&nbsp;icy - portfolio</a>
+                        </li>
+                        <li class="nav-item inactive-tab ca-four">
+                          <a class="nav-link" href="specs.html"><img src="img/pc-favicon.png">&nbsp;&nbsp; icy - extra</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card-body ca-two">
+                      <h2 class="card-title linear-wipe">ICY</h2>
+                      <h5 class="card-title">Ryan King</h5>
+                      <div class="spacer"></div>
+                      <p class="card-text">Welcome to my website! My name is Ryan King, aka 'icy', I am a 19 year old student living in Belfast. I am studying Computer Science in Queens and I am interested in cybersecurity, web development and programming as a whole. <br />
+                      I am currently working on a plethora of projects, including this website, to build up my portfolio and learn along the way. You can find all of my links below.</p>
+                      <p class="icons">
+                        <a href="https://discordapp.com/users/331504500269645824" target="blank" class="icons"><i class="fab fa-2x fa-brands fa-discord"></i></a>&nbsp;&nbsp;
+                        <a href="https://www.instagram.com/ryankings.s/" target="blank" class="icons"><i class="fab fa-2x fa-brands fa-instagram"></i></a>&nbsp;&nbsp;
+                        <a href="https://www.last.fm/user/wallhacks" target="blank" class="icons"><i class="fab fa-2x fa-brands fa-lastfm"></i></a>&nbsp;&nbsp;
+                        <a href="https://soundcloud.com/steezy-scourge" target="blank" class="icons"><i class="fab fa-2x fa-brands fa-soundcloud"></i></a>&nbsp;&nbsp;
+                        <a href="https://open.spotify.com/user/stezzy.scourge" target="blank" class="icons"><i class="fab fa-2x fa-brands fa-spotify"></i></a>&nbsp;&nbsp;
+                        <a href="https://steamcommunity.com/id/hldmyhand" target="blank" class="icons"><i class="fab fa-2x fa-brands fa-steam-symbol"></i></a>&nbsp;&nbsp;   
+                        <a href="https://www.twitch.tv/icey_cs" target="blank" class="icons"><i class="fab fa-2x fa-brands fa-twitch"></i></a>&nbsp;&nbsp;
+                        <a href="https://twitter.com/csgoicey" target="blank" class="icons"><i class="fab fa-2x fa-brands fa-twitter"></i></a>&nbsp;&nbsp;
+                        </p>
+                    </div>
+                  </div>
+              </form>   
+            </div>
+          </div>
+    </body>
+    <script>
+        var e = document.getElementById("background");
+e.style.opacity = 0;
+var vid = document.getElementById("background");
+vid.oncanplaythrough = function() {
+    setTimeout(function() {
+        var e = document.getElementById('background');
+        fade(e);
+    }, 10);
+};
+function fade(element) {
+    var op = 0;
+    var timer = setInterval(function() {
+        if (op >= 1) clearInterval(timer);
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op += op * 0.1 || 0.1;
+    }, 50);
+}
+    </script>
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable();
+  } );
+  $( "#draggable" ).draggable({ cursor: "move" });
+  </script>
+  
